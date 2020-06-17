@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Qoutes } from './qoutes';
+import { Qoutes } from './quote';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
