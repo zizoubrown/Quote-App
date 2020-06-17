@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>Qoute</h1>
+   <hr>
+    <div class="row">
+    <div class="col-md-6">
+    <div *ngFor='let qoute of qoutes; let i = index'>
+     <h6 id={{i}} class="capitalize">{{qoute.submited_by}} </h6>
+      <h6>Posted:{{qoute.datecreated| dateCount}}</h6>
+      <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+    <!-- </div> 
+    <div>  -->
+      <app-qoute-details *ngIf='qoute.showDescription' [qoute]='qoute' (isComplete) = 'deleteQoute($event,i)'></app-qoute-details>
+    </div>
+    </div>
+
+  <div class="col-md-6">
+    <app-qoute-form (addQoutes)="addNewQoutes($event)"></app-qoute-form>
+  </div>
+  </div>
+</div>
