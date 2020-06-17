@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Qoutes } from '../quote';
 @Component({
   selector: 'app-qoute',
-  moduleId: module.id,
   templateUrl: './qoute.component.html',
   styleUrls: ['./qoute.component.css']
 })
